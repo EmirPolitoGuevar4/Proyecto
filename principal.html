@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Button styles */
+        .btn {
+            background-color: #2677b9;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d89e33;
+            transform: scale(1.2);
+        }
+
+        /* Hero content */
+        .hero-content {
+            padding-bottom: 80px;
+        }
+
+        /* Animated text styles */
+        .animated-text {
+            margin-top: -50px;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        /* Card styles */
+        .rounded-card {
+            background: linear-gradient(to right, #fff, #f9fafb);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .rounded-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .rounded-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .rounded-card p {
+            padding: 16px;
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        /* New Practice Now button style */
+        .practice-button {
+            margin-left: -20px;
+            /* Adjust to move the button slightly to the left */
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            position: relative;
+            /* Permite usar left */
+            left: -80px;
+            /* Ajusta el valor según sea necesario */
+            /* Otras propiedades */
+
+        }
+
+        .practice-button:hover {
+            background-color: #357ab7;
+            /* Darker shade on hover */
+        }
+        .practice-button:active {
+            background-color: #d89e33; /* Color naranja al presionar */
+            transform: scale(2.2); /* Aumentar tamaño al presionar */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="flex items-center space-x-4">
+                <img src="img/loggooo__1_-removebg-preview.png" alt="Project Logo" class="h-10">
+                <h1 class="text-3xl font-bold text-gray-800">Next Adjective</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="actividades.html" class="practice-button">Practice Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative">
+            <video autoplay muted loop class="w-full h-[80vh] object-cover">
+                <source src="video/coverr-coworkers-make-notes-in-a-notebook-6261-1080p.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div
+                class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white hero-content">
+                <h1 id="animatedText" class="animated-text">TEXT</h1>
+                <p class="text-lg sm:text-xl mb-6">Complete the following</p>
+                <a href="test.html" class="btn text-white font-bold py-3 px-6 rounded-full ">TEST</a>
+            </div>
+        </section>
+
+        <section class="container mx-auto py-12 px-4">
+            <article class="text-center mb-8">
+                <h2 class="text-4xl font-bold mb-4">WHAT ARE ADJECTIVES?</h2>
+                <p class="text-lg text-gray-600">Adjectives are words used to describe, identify, or quantify nouns or pronouns. They provide additional details about an object or subject, such as its size, shape, color, or state. Adjectives help to specify which one, what kind, or how many, making communication more precise and meaningful. They are an essential part of the English language, as they allow speakers and writers to add depth and clarity to their descriptions, giving listeners and readers a clearer understanding of the nouns they accompany.</p>
+            </article>
+
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Types of Adjectives</h3>
+                    <p>One-syllable adjectives typically form the comparative by adding "-er".</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>tall → taller</li>
+                        <li>fast → faster</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Two-Syllable Adjectives</h3>
+                    <p>Some two-syllable adjectives form the comparative by adding "-er", while many use "more".</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>happy → happier</li>
+                        <li>careful → more careful</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Three or More Syllable Adjectives</h3>
+                    <p>These adjectives generally use "more" to form the comparative.</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>interesting → more interesting</li>
+                        <li>comfortable → more comfortable</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Using Comparatives</h3>
+                    <p><strong>Comparisons:</strong> Used to compare two things.</p>
+                    <p>Example: "My car is faster than your car."</p>
+                    <p><strong>Superlatives:</strong> Used when comparing one element to a group.</p>
+                    <p>Example: "She is the tallest girl in the class."</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-white py-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Next Adjective. All rights reserved. Emir Polito, Karla Nohemi, Lizet Vera</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Function for text animation in the hero
+        const textArray = ["Welcome to Next Adjective", "Learn English Adjectives", "Practice Comparatives"];
+        let currentTextIndex = 0;
+        let currentCharIndex = 0;
+        const animatedTextElement = document.getElementById("animatedText");
+
+        function typeText() {
+            if (currentCharIndex < textArray[currentTextIndex].length) {
+                animatedTextElement.innerHTML += textArray[currentTextIndex].charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(typeText, 100); // typing speed
+            } else {
+                setTimeout(deleteText, 1000); // wait before deleting
+            }
+        }
+
+        function deleteText() {
+            if (currentCharIndex > 0) {
+                animatedTextElement.innerHTML = textArray[currentTextIndex].substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                setTimeout(deleteText, 100); // deletion speed
+            } else {
+                currentTextIndex = (currentTextIndex + 1) % textArray.length; // change to the next text
+                currentCharIndex = 0; // Reset character index
+                setTimeout(typeText, 500); // wait before typing the next text
+            }
+        }
+
+        // Start the typing effect
+        window.onload = function () {
+            typeText();
+        };
+    </script>
+</body>
+
+</html>
